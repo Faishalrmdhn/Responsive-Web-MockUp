@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+.container-nav {
+  width: auto;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 30px;
+  font-family: "Airbnb Cereal App", Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nav1 {
+  padding: 5px;
+  margin: auto;
+  flex: 1;
+}
+
+.nav2 {
+  margin: auto;
+  flex: 11;
+}
+
+.container-side {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  align-content: flex-start;
+}
+
+.side {
+  margin: auto;
+  padding: 15px;
+  flex: 1;
+}
+
+.container-card {
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  font-family: "Airbnb Cereal App", Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+.rect1 {
+  margin: 4px;
+  padding: 20px;
+
+  min-width: 200px;
+  max-height: 213px;
+  flex: 1;
+  background: linear-gradient(
+    278.29deg,
+    #fbb2b4 30.05%,
+    rgba(255, 143, 178, 0) 133.19%
+  );
+  filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+  border-radius: 10px;
+}
+
+.rect2 {
+  margin: 4px;
+  padding: 20px;
+
+  min-width: 200px;
+  max-height: 213px;
+  flex: 1;
+  background: linear-gradient(
+    278.29deg,
+    #29dfff 30.05%,
+    rgba(41, 223, 255, 0) 133.19%
+  );
+  filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+  border-radius: 10px;
+}
+
+.rect3 {
+  margin: 4px;
+  padding: 20px;
+
+  min-width: 200px;
+  max-height: 213px;
+  flex: 1;
+  background: linear-gradient(
+    278.29deg,
+    #ab84c8 30.05%,
+    rgba(241, 201, 236, 0) 133.19%
+  );
+  filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+  border-radius: 10px;
+}
+
+.decor {
+  position: absolute;
+  width: 178px;
+  height: 141px;
+  left: 50%;
+  top: 0px;
+}
+
+.circle1 {
+  width: 75px;
+  position: relative;
+  top: 30%;
+}
+
+.circle2 {
+  width: 75px;
+  position: relative;
+  top: 10%;
+  right: 30%;
+}
+
+.circle3 {
+  width: 75px;
+  position: relative;
+  top: -5%;
+  right: 10%;
+}
+
+img {
+  width: auto;
+}
+
+.revenue {
+  min-width: auto;
+  height: auto;
+
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.recent {
+  height: 230px;
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+}

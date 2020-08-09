@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- belum text dan fontstyle, semantic juga belum -->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="history.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <title>History</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <main class="col-sm-12">
+          <!-----wrap icon navbar-->
+          <div class="row text-center container-nav">
+            <div class="nav1">
+              <img src="./img/hamburger.png" alt="" />
+            </div>
+            <div class="nav2">History</div>
+          </div>
+          <div class="container-fluid px-0">
+            <!-- wrap row-2 start-->
+            <div class="row text-center">
+              <!-- wrap side -->
+              <div class="col-sm-1 px-0 container-side">
+                <div class="side mt-2"><img src="./img/fork.png" alt="" /></div>
+                <div class="side"><img src="./img/clipboard.png" alt="" /></div>
+                <div class="side"><img src="./img/add.png" alt="" /></div>
+              </div>
+
+              <!-- wrap Main start -->
+              <div class="col-sm-11 mt-3">
+                <div class="row">
+                  <!-- wrap Card Start -->
+                  <div class="col-sm container-card">
+                    <div class="rect1">
+                      <p>Today's Income</p>
+                      <h3>Rp.1000.000</h3>
+                      <p>+2% Yesterday</p>
+                      <div class="decor">
+                        <img src="./img/circle.png"  class="circle1">
+                        <img src="./img/circle.png"  class="circle2">
+                        <img src="./img/circle.png"  class="circle3">
+                      </div>
+                    </div>
+                    <div class="rect2">
+                      <p>Orders</p>
+                      <h3>3.270</h3>
+                      <p>+5% Last Week</p>
+                      <div class="decor">
+                        <img src="./img/circle.png"  class="circle1">
+                        <img src="./img/circle.png"  class="circle2">
+                        <img src="./img/circle.png"  class="circle3">
+                      </div>
+                    </div>
+                    <div class="rect3">
+                      <p>This Year Income</p>
+                      <h3>Rp. 100.000.000.000</h3>
+                      <p>+10% Last Year</p>
+                      <div class="decor">
+                        <img src="./img/circle.png"  class="circle1">
+                        <img src="./img/circle.png"  class="circle2">
+                        <img src="./img/circle.png"  class="circle3">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- wrap Card End -->
+                </div>
+                <!-- Revenue start-->
+                <div class="row">
+                  <div class="col-sm-12 mt-5">
+                    <div class="revenue">
+                      <div class="row p-4">
+                        <div class="col-sm-10 text-left"><h3>Revenue</h3></div>
+                        <div class="col-sm-2 text-center">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Month</button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Year</a>
+                            </div>
+                        </div>
+                      </div>
+                      <canvas id="myChart" width="auto" height="auto"></canvas>
+                    </div>
+                  </div>
+                </div>
+                <!-- Revenue end-->
+                <!-- Recent Order start-->
+                <div class="row mt-5">
+                  <div class="col-sm-12 mt-5">
+                    <div class="recent">
+                      <div class="row p-4">
+                       <div class="col-sm-10 text-left"><h3>Recent Order</h3></div> 
+                       <div class="col-sm-2 text-center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Today</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Yesterday</a>
+                        </div>
+                       </div>
+                      </div>
+                      
+                      <table>
+                        <tr>
+                          <th>INVOICE</th>
+                          <th>CASHIER</th>
+                          <th>DATE</th>
+                          <th>ORDERS</th>
+                          <th>AMOUNT</th>
+                          <tr style="border-bottom:2px solid #CECECE">
+                            <td colspan="100%"></td>
+                          </tr>
+                        </tr>
+
+                        <tr>
+                          <td>#10928</td>
+                          <td>Cashier 1</td>
+                          <td>06 October 2019</td>
+                          <td>Ice Tea, Salad with Peanut Sauce</td>
+                          <td>Rp. 120.000</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- Recent Order end-->
+              </div>
+              <!-- wrap Main end -->
+            </div>
+            <!-- wrap row-2 end-->
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- <footer>Copyright &copy;2020 Muhammad Faishal Ramadhan</footer> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+    <script src="history.js"></script>
+  </body>
+</html>

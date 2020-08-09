@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- belum text , cartlist, img nav, selection belum -->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="home-select.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <title>Home-Select</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <main class="col-sm-8">
+          <!-----wrap icon navbar-->
+          <div class="row text-center container-nav">
+            <div class="nav1">
+              <img src="./img/hamburger.png" alt="" />
+            </div>
+            <div class="nav2">Food Items</div>
+            <div class="nav3">
+              <img src="./img/search.png" alt="" />
+            </div>
+          </div>
+          <div class="container-fluid px-0">
+            <!-- wrap row-2 -->
+            <div class="row text-center">
+              <!-- wrap side -->
+              <div class="col-sm-1 px-0 container-side">
+                <div class="side mt-2"><img src="./img/fork.png" alt="" /></div>
+                <div class="side"><img src="./img/clipboard.png" alt="" /></div>
+                <div class="side"><img src="./img/add.png" alt="" /></div>
+              </div>
+
+              <!-- wrap item start -->
+              <div
+                class="col-sm-11"
+                style="background: rgba(190, 195, 202, 0.3);"
+              >
+                <div class="container-item mt-2">
+                  <div class="item-list">
+                    <img src="./img/item1.png" alt="" />
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Espresso <br />
+                        Rp. 5000
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item-list">
+                    <img src="./img/item2.png" />
+                    <div class="select-image">
+                      <img src="./img/tick.png" class="icon-select" alt="" />
+                    </div>
+
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Coffee Latte <br />
+                        Rp. 15.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <img src="./img/item3.png" alt="" />
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Cappucino <br />
+                        Rp. 5.000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-item">
+                  <div class="item-list">
+                    <img src="./img/item4.png" alt="" />
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Red Velvet Latte <br />
+                        Rp. 33.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <img src="./img/item5.png" alt="" />
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Choco Rhum <br />
+                        Rp. 28.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <img src="./img/item6.png" />
+                    <div class="select-image">
+                      <img src="./img/tick.png" class="icon-select" alt="" />
+                    </div>
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Black Forest <br />
+                        Rp. 30.000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-item">
+                  <div class="item-list">
+                    <img src="./img/item7.png" alt="" />
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Chicken Katsu Dabu-dabu <br />
+                        Rp. 60.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <img src="./img/item2.png" />
+                    <div class="select-image">
+                      <img src="./img/tick.png" class="icon-select" alt="" />
+                    </div>
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Salmon Truffle Teriyaki <br />
+                        Rp. 60.000
+                      </p>
+                    </div>
+                  </div>
+                  <div class="item-list">
+                    <img src="./img/item9.png" alt="" />
+                    <div class="item-list-body">
+                      <p class="item-text">
+                        Wiener Schnitzel <br />
+                        Rp. 69.000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- wrap item end -->
+            </div>
+            <!-- wrap row-2 -->
+          </div>
+        </main>
+        <!-- whole cart start-->
+        <div class="col-sm-4 container-wholecart">
+          <div class="container-topcart row">
+            <div class="col-sm m-auto">Cart <span class="badge">3</span></div>
+          </div>
+          <!-- bodycart wrapping -->
+          <div class="container-bodycart1">
+            <div class="cartlist">
+              <div class="cartlist-item">
+                <table style="width: 100%;">
+                  <tr>
+                    <th rowspan="2" style="width: 50%;">
+                      <img src="./img/item2.png" alt="" />
+                    </th>
+                    <th>Coffee Latte</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="container-btn">
+                      <div class="btn">
+                        <button type="button" class="btn btn-outline-success">
+                          +
+                        </button>
+                      </div>
+                      <div class="btn">
+                        1
+                      </div>
+                      <div class="btn">
+                        <button type="button" class="btn btn-outline-success">
+                          -
+                        </button>
+                      </div>
+                    </td>
+                    <td>Rp. 15.000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="cartlist-item">
+                <table style="width: 100%;">
+                  <tr>
+                    <th rowspan="2" style="width: 50%;">
+                      <img src="./img/item6.png" alt="" />
+                    </th>
+                    <th>Black Forest</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="container-btn">
+                      <div class="btn">
+                        <button type="button" class="btn btn-outline-success">
+                          +
+                        </button>
+                      </div>
+                      <div class="btn">
+                        1
+                      </div>
+                      <div class="btn">
+                        <button type="button" class="btn btn-outline-success">
+                          -
+                        </button>
+                      </div>
+                    </td>
+                    <td>Rp. 30.000</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="cartlist-item">
+                <table style="width: 100%;">
+                  <tr>
+                    <th rowspan="2" style="width: 50%;">
+                      <img src="./img/item8.png" alt="" />
+                    </th>
+                    <th>Salmon Truffle</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="container-btn">
+                      <div class="btn">
+                        <button type="button" class="btn btn-outline-success">
+                          +
+                        </button>
+                      </div>
+                      <div class="btn">
+                        1
+                      </div>
+                      <div class="btn">
+                        <button type="button" class="btn btn-outline-success">
+                          -
+                        </button>
+                      </div>
+                    </td>
+                    <td>Rp. 60.000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="kosong"></div>
+            <div class="carttotal">
+              <p>Total: Rp. 105.000*</p>
+              <p>*Belum termasuk ppn</p>
+              <a href="#checkout" data-toggle="modal" data-target="#checkout">
+                <button
+                  type="button"
+                  class="btn btn-block text-white"
+                  style="background-color: #57cad5;"
+                >
+                  Checkout
+                </button></a
+              >
+              <button
+                type="button"
+                class="btn btn-block text-white"
+                style="background: #f24f8a;"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- whole cart end -->
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="checkout"
+      tabindex="-1"
+      aria-labelledby="checkout"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header row">
+            <div class="modal-title col-sm-7" id="exampleModalLabel">
+              <h5>Checkout</h5>
+              Cashier : Bradd Pitt
+            </div>
+            <div class="col-sm-5">Receipt no: #010410919</div>
+          </div>
+          <div class="modal-body">
+            <table>
+              <tr>
+                <th>Coffe Latte 1x</th>
+                <td>Rp.15.000</td>
+              </tr>
+              <tr>
+                <th>Black Forest</th>
+                <td>Rp. 30.000</td>
+              </tr>
+              <tr>
+                <th>Salmon Truffle Teriyaki 1x</th>
+                <td>Rp. 60.000</td>
+              </tr>
+              <tr>
+                <th>Ppn 10%</th>
+                <td>Rp. 10.500</td>
+              </tr>
+              <tr>
+                <th></th>
+                <td>Total: Rp. 115.500</td>
+              </tr>
+              <tr>
+                <th>Payment: Cash</th>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <button
+                type="button"
+                class="btn text-white btn-block"
+                style="background: #f24f8a;"
+              >
+                Print
+              </button>
+            </div>
+            <div class="row"><div class="col text-center">Or</div></div>
+            <div class="row">
+              <button
+                type="button "
+                class="btn text-white btn-block"
+                style="background-color: #57cad5;"
+              >
+                Sent Email
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
